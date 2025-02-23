@@ -3,6 +3,13 @@ import numpy as np
 from utils.image_processing import convert_to_gray
 
 def test_convert_to_gray():
+    """
+    Test the convert_to_gray function.
+
+    This test creates a dummy RGB image, converts it to grayscale using the
+    convert_to_gray function, and checks if the output is a 2D array with the
+    same dimensions as the input image.
+    """
     # Create a dummy RGB image (3x3 pixels)
     rgb_image = np.array([[[255, 0, 0], [0, 255, 0], [0, 0, 255]],
                           [[255, 255, 0], [0, 255, 255], [255, 0, 255]],
@@ -19,5 +26,5 @@ def test_convert_to_gray():
 
     print("All tests passed.")
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     test_convert_to_gray()
